@@ -1,5 +1,5 @@
 package basiccoreprogram;
-
+import java.util.Scanner;
 public class Basiccore
 	{
 		public static void main(String[] args) 
