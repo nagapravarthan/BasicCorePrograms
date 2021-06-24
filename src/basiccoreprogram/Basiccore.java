@@ -3,30 +3,23 @@ package basiccoreprogram;
 import java.util.Scanner;
 
 public class Basiccore
-  
 {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("Enter divident: ");
 		Scanner s=new Scanner(System.in);
-		System.out.println("Enter a number");
-		int n=s.nextInt();
-		while(n%2==0)
-		{
-			System.out.println(2+" ");
-			n/=2;
-		}
-		for(int i=3;i<=Math.sqrt(n);i+=2)
-		{
-			while(n%i==0)
-			{
-				System.out.println(i+" ");
-				n/=i;
-			}
-		}
-		if(n>2)
-			System.out.print(n);
+		int divident=s.nextInt();
+		
+		System.out.println("Enter divisor: ");
+		Scanner s1=new Scanner(System.in);
+		int divisor=s1.nextInt();
+		
+		int quo=divident/divisor;
+		int rem=divident%divisor;
+		System.out.println("Quotient= "+quo);
+		System.out.println("Remainder= "+rem);
 
 	}
 
