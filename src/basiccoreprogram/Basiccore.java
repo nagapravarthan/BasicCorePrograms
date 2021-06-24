@@ -4,22 +4,21 @@ import java.util.Scanner;
 
 public class Basiccore
 {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Enter divident: ");
+		System.out.println("Enter 1st number: ");
 		Scanner s=new Scanner(System.in);
-		int divident=s.nextInt();
-		
-		System.out.println("Enter divisor: ");
+		int a=s.nextInt();
+		System.out.println("Enter 2nd number: ");
 		Scanner s1=new Scanner(System.in);
-		int divisor=s1.nextInt();
-		
-		int quo=divident/divisor;
-		int rem=divident%divisor;
-		System.out.println("Quotient= "+quo);
-		System.out.println("Remainder= "+rem);
+		int b=s1.nextInt();
+		System.out.println("Before Swapping: "+a+" "+b);
+		int temp;
+		temp=a;
+		a=b;
+		b=temp;
+		System.out.println("After swapping: "+a+" "+b);
 
 	}
 
