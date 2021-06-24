@@ -3,30 +3,26 @@ package basiccoreprogram;
 import java.util.Scanner;
 
 public class Basiccore
-
-
-
+ 
 	{
-
 		public static void main(String[] args) 
 		{
-			// TODO Auto-generated method stub
+			System.out.println("Enter the number: ");
 			Scanner s=new Scanner(System.in);
-			System.out.println("Enter the year: ");
-			int year =s.nextInt();
 			s.close();
-			if(year<1000)
+			int n=s.nextInt();
+			int power=1;
+			if(n>=0&&n<31)
 			{
-				System.out.println("Enter a valid Year ");
-			}
-			
-			else if((year%4==0 && year%100!=0) || year%400==0)
-			{
-				System.out.println("Entered year is Leap year");
+				for(int i=1;i<=n;i++)
+				{
+					power=power*2;
+					System.out.println("Power of the given number is: "+power);
+				}
+				
 			}
 			else
-				System.out.println("Entered year is not leap year");
-
+				System.out.println("number exceeds limit");
 		}
-
 	}
+	
